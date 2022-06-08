@@ -1,0 +1,121 @@
+.tecnologi > li {
+  color: #fff;
+  background: linear-gradient(to bottom, #1a4d72ff, #14283c);
+  font-weight: bold;
+  padding: 0.7rem;
+
+  margin: 0.8rem;
+  border-radius: 6%;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  /* --tw-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+  --tw-shadow-colored: 0 25px 50px -12px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
+    var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow); */
+}
+.tecnologi > li:hover {
+  color: cyan;
+  transition: 0.5s;
+}
+/* .cuadrado1 {
+  width: 60px;
+  height: 60px;
+  background-color: red;
+}
+.cuadrado {
+  width: 60px;
+  height: 60px;
+  background-color: red;
+  animation: voltear 2s linear 0s 1 normal forwards,
+    rot 2s linear 2s 1 normal forwards;
+}
+@keyframes voltear {
+  0% {
+    transform: rotate(0deg);
+    transform-origin: right bottom;
+  }
+  100% {
+    transform: rotate(90deg);
+    transform-origin: right bottom;
+  }
+} */
+
+.a {
+  animation: rot 3s cubic-bezier(0.47, 0, 0.745, 0.715) infinite;
+}
+.b {
+  animation: rot 3s cubic-bezier(0.47, 0, 0.745, 0.715) infinite;
+  animation-delay: 300ms;
+}
+.b::after {
+  content: "";
+
+  animation: name 25s cubic-bezier(0.47, 0, 0.745, 0.715) infinite;
+  animation-delay: 300ms;
+  content: "Bootstrap";
+}
+
+@keyframes name {
+  0% {
+  }
+  25% {
+    content: "Tailwind";
+  }
+  50% {
+    content: "SCSS";
+  }
+  100% {
+    content: "Bootstrap";
+  }
+}
+
+.c {
+  animation: rot 3s cubic-bezier(0.47, 0, 0.745, 0.715) infinite;
+  animation-delay: 600ms;
+}
+.d {
+  animation: rot 3s cubic-bezier(0.47, 0, 0.745, 0.715) infinite;
+  animation-delay: 900ms;
+}
+.e {
+  animation: rot 3s cubic-bezier(0.47, 0, 0.745, 0.715) infinite;
+  animation-delay: 1200ms;
+}
+.f {
+  animation: rot 3s cubic-bezier(0.47, 0, 0.745, 0.715) infinite;
+  animation-delay: 1500ms;
+}
+.g {
+  animation: rot 3s cubic-bezier(0.47, 0, 0.745, 0.715) infinite;
+  animation-delay: 1800ms;
+}
+
+@keyframes rot {
+  0% {
+    transform: rotateY(0);
+  }
+  50% {
+    transform: rotateY(-30deg);
+  }
+  100% {
+    transform: rotateY(0);
+  }
+}
+@media (max-width: 1024px) {
+  .tecnologi > li {
+    padding: 0.6rem;
+    font-size: 0.85rem;
+    margin: 2px;
+    width: 160px;
+  }
+}
+
+@media (max-width: 640px) {
+  .tecnologi > li {
+    padding: 0.6rem;
+    margin: 2px;
+    width: 150px;
+    font-size: 0.7rem;
+  }
+}
